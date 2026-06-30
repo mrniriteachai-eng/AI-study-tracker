@@ -391,7 +391,7 @@ def main():
                 st.metric("⏱ Average/Day", f"{df['Hours'].mean():.1f}")
             
             # Quick chart
-            st.subheader(" Recent Activity")
+            st.subheader("📈 Recent Activity")
             
             daily = df.groupby('Date')['Hours'].sum().sort_index().tail(10)
             
